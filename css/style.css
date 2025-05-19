@@ -103,6 +103,20 @@ section{
     white-space: nowrap;
     color: white;
     font-family: 'Roboto-Bold';
+    animation: texto 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes texto {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .s-conteudo button{
@@ -114,6 +128,7 @@ section{
     font-family: 'Roboto-Bold';
     font-size: large;
     border: none;
+    cursor: pointer;
 }
 
 .swiper{
@@ -140,7 +155,7 @@ section{
     display: flex;
     width: 100%;
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -153,7 +168,7 @@ section{
     white-space: nowrap;
     width: 23rem;
     height: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-evenly;
 
 }
@@ -180,9 +195,176 @@ section{
 }
 
 .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     width: 70%;
     height: 90%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
+.card{
+    width: 230px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 20px rgb(206, 206, 206);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+
+    animation: card 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes card {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card img{
+    width: 140px;
+    margin-bottom: -15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover{
+    transform: scale(1.2);
+}
+
+.card h1{
+    font-family: 'Roboto-Bold';
+}
+
+.card p{
+    font-family: 'Roboto';
+}
+
+
+.resultados{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-color: rgb(255,249,238);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-resultado{
+    width: 400px;
+    height: 90%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card-resultado:hover{
+    	animation: sombra 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes sombra {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+
+.resultados img{
+    width: 140px;
+    border-radius: 50%;
+    
+}
+
+.resultados h1{
+    font-family: 'Roboto-Bold';
+    font-size: 40px;
+    color: orangered;
+}
+
+.resultados p{
+    font-family: 'Roboto-Regular';
+}
+
+.material{
+    width: 70%;
+    height: 310px;
+    border-radius: 18px;
+    background-color: rgb(255, 94, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.material-info{
+    width: 45%;
+    height: 250px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 14px;
+}
+
+.material h1{
+    font-family: 'Roboto-Bold';
+    color: white;
+    font-size: 40px;
+}
+
+.material p{
+    font-family: 'Roboto-Regular';
+    color: white;
+    font-size: 19px;
+}
+
+.material button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    color: orangered;
+    font-family: 'Roboto-Bold';
+    font-size: large;
+    border: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+}
+
+.material button:hover{
+    background-color: rgb(58, 212, 58);
+    color: black;
+}
+
+.imagem-guia{
+    width: 50%;
+    height: 280px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-guia img{
+    width: 70%;
+    box-shadow: 1px 1px 15px 1px black;
+    
+}
 
