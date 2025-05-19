@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     height: 75px;
     background-color: white;
@@ -26,17 +26,46 @@ a {
 }
 
 header p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto-Medium', sans-serif;
     color: black;
     
 }
 
-header button {
+header p:hover{
+    color: orange;
+}
+
+.logo {
+    width: 80px;
+    height: 70px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+.logo img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.h-selecoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 700px;
+    /* border: 1px solid black; */
+    font-size: large;
+}
+
+.h-botao {
     width: 250px;
     height: 45px;
     background-color: orangered;
     border-radius: 30px;
-    color: wheat;
+    color: white;
     font-size:medium;
     font-weight: bold;
     cursor: pointer;
@@ -44,14 +73,60 @@ header button {
 
 section{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 30%;
-    border: 1px solid black;
+    height: 80%;
+    background-image: url("../assets/images/mulher-meditando.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-position-y: -120px;
+
+}
+
+.s-conteudo{
+    width: 600px;
+    height: 300px;
+    /* border: 1px solid white; */
+    margin-left: 10%;
 }
 
 section p {
-font-size: xx-large;
+    font-size:100px;
+    white-space: nowrap;
+    color: white;
+    font-family: 'Roboto-Bold';
+}
 
+section button{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: orangered;
+    color: white;
+    font-family: 'Roboto-Bold';
+    font-size: large;
+    border: none;
+}
+
+.swiper{
+    display: flex;
+    width: 90%;
+    height: 90px;
+    background-color: white;
+
+}
+
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img{
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 

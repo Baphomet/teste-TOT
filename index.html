@@ -3,24 +3,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/fonts.css"/>
 
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <main>
         <header>
-            <img src="assets/icons/tot-logo.png" alt="as">
+            <div class="logo"><img src="assets/icons/tot-logo.png" alt="as"></div>
+            <div class="h-selecoes">
             <a href=""><p>Funcionalidades</p></a>
             <a href=""><p>Parceiros</p></a>
             <a href=""><p>Depoimentos</p></a>
             <a href=""><p>Blog</p></a>
-            <a href=""><button>Baixar App</button></a>
+            </div>
+            <a href=""><button class="h-botao">Baixar App</button></a>
         </header>
 
         <section>
-        <p>Aumente o engajamento dos seus treinamentos corporativos</p>
-
+            <div class="s-conteudo"> 
+            <p>Cuide da sua<br>saúde 24/7</p>
+            <button>Baixe o app</button>
+            </div>
         </section>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/images/logo1.png" alt="Parceiro 1"></div>
+                <div class="swiper-slide"><img src="assets/images/logo2.png" alt="Parceiro 2"></div>
+                <div class="swiper-slide"><img src="assets/images/logo3.png" alt="Parceiro 3"></div>
+                <div class="swiper-slide"><img src="assets/images/logo4.png" alt="Parceiro 4"></div>
+                <div class="swiper-slide"><img src="assets/images/logo1.png" alt="Parceiro 1"></div>
+                <div class="swiper-slide"><img src="assets/images/logo2.png" alt="Parceiro 2"></div>
+                <div class="swiper-slide"><img src="assets/images/logo3.png" alt="Parceiro 3"></div>
+                <div class="swiper-slide"><img src="assets/images/logo4.png" alt="Parceiro 4"></div>
+            </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </div>
+
+        
     </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
