@@ -643,8 +643,190 @@ input.borda {
     margin-top: 20px;
 }
 
+/* ======================
+   Media Queries
+   ====================== */
+
+
+@media (max-width: 1024px) {
+
+  .solucoes {
+    flex-direction: column;
+    height: auto;
+    row-gap: 2rem;
+    padding: 0 1rem;
+  }
+  .info, .cards {
+    width: 100%;
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .resultados {
+    flex-direction: column;
+    height: auto;
+    row-gap: 1.5rem;
+    padding: 1rem;
+  }
+  .card-resultado {
+    width: 90%;
+  }
+
+  .material {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    row-gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .material-info, .imagem-guia {
+    width: 100%;
+  }
+
+ 
+  .slider {
+    height: 300px;
+  }
+
+  
+  .formulario input {
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 768px) {
+ 
+  header {
+    flex-direction: column;
+    height: 100%;
+  }
+  nav {
+    width: 10%;
+    height: 300px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h-botao{
+    display: none;
+  }
+ 
+  .s-conteudo {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .s-conteudo p{
+    font-size: 30px;
+  }
+  .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .s-conteudo p {
+    font-size: auto;
+    white-space: normal;
+  }
+
+  .s-container{
+    height: auto;
+  }
+
+  .s-container{
+    display: flex;
+    background-position: center;
+    width: 100%;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
 
 
 
+  .cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .resultados{
+    width: 90%;
+  }
 
 
+  .cursos {
+    padding-top: 2rem;
+  }
+
+  .cursos h1{
+    text-align: center;
+}
+  .slider {
+    height: 350px;
+  }
+
+
+  .formulario {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .formulario h1{
+    text-align: center;
+    font-size: 30px;
+  }
+  .formulario input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .formulario button{
+    margin-bottom: 10px;
+  }
+
+  .f-contato  {
+    width: 100%;
+    margin-left: 10px;
+  }
+ 
+  .f-newsletter, .f-inicio {
+    display: none;
+  }
+  .copyright {
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .s-conteudo p {
+    font-size: 2.5rem;
+  }
+  .h-botao {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+
+  .formulario input {
+    width: 80%;
+  }
+  .f-newsletter {
+    display: none;
+  }
+}
