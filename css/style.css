@@ -28,11 +28,11 @@ a {
 header p {
     font-family: 'Roboto-Medium', sans-serif;
     color: black;
-    
+    transition: color 0.3s ease-in-out;
 }
 
 header p:hover{
-    color: orange;
+    color: orangered;
 }
 
 .logo {
@@ -47,10 +47,9 @@ header p:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 
-.h-selecoes{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -69,6 +68,15 @@ header p:hover{
     font-size:medium;
     font-weight: bold;
     cursor: pointer;
+    transition: border 0.5s ease-in-out;
+}
+
+.h-botao:active{
+    background-color: rgb(214, 57, 0);
+}
+
+.h-botao:hover{
+    border: 1px solid white;
 }
 
 section{
@@ -129,6 +137,15 @@ section{
     font-size: large;
     border: none;
     cursor: pointer;
+        transition: background-color 0.3s ease-in-out,
+                    color 0.3s ease-in-out,
+                    border 0.3s ease-in-out;
+}
+
+.s-conteudo button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
 }
 
 .swiper{
@@ -136,7 +153,6 @@ section{
     width: 90%;
     height: 90px;
     background-color: rgb(255,249,238);
-
 }
 
 .swiper-slide{
@@ -153,12 +169,12 @@ section{
 
 .solucoes{
     display: flex;
-    width: 100%;
+    width: 85%;
     height: 500px;
     /* border: 1px solid black; */
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -170,7 +186,6 @@ section{
     height: 50%;
     /* border: 1px solid black; */
     justify-content: space-evenly;
-
 }
 
 .info p:first-child{
@@ -192,12 +207,20 @@ section{
     font-family: 'Roboto-Bold';
     font-size: large;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+}
+
+.info button:hover{
+ background-color: rgb(0, 0, 0);
+
 }
 
 .cards{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 70%;
     height: 90%;
     /* border: 1px solid black; */
@@ -231,6 +254,7 @@ section{
     width: 140px;
     margin-bottom: -15px;
     transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .card img:hover{
@@ -269,7 +293,7 @@ section{
 }
 
 .card-resultado:hover{
-    	animation: sombra 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: sombra 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes sombra {
@@ -303,11 +327,13 @@ section{
 .material{
     width: 70%;
     height: 310px;
-    border-radius: 18px;
+    border-radius: 20px;
     background-color: rgb(255, 94, 35);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .material-info{
@@ -334,7 +360,7 @@ section{
 
 .material button{
     width: 200px;
-    height: 50px;
+    height: 60px;
     border-radius: 30px;
     background-color: white;
     color: orangered;
@@ -367,4 +393,258 @@ section{
     box-shadow: 1px 1px 15px 1px black;
     
 }
+
+.cursos{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto-Bold';
+    color: orangered;
+    font-size: 20px;
+    padding-top: 60px;
+}
+
+
+.slider{
+    height: 400px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 14);
+  animation: scroll 28s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 7)); }
+}
+
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+.slide img:hover {
+    transform: translateZ(13px);
+    cursor: pointer;
+}
+
+.formulario{
+    width: 80%;
+    height: 550px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario h1{
+    color: white;
+    font-family: 'Roboto-Bold';
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formulario input{
+    width: 1200px;
+    height: 70px;
+    font-family: 'Roboto-Regular';
+    display: flex;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+}
+
+.formulario input:focus{
+    background-color: rgb(238, 238, 238);
+    outline: none;
+}
+
+input.erro {
+    background-color: rgb(255, 184, 184);
+}
+
+.formulario button{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: orangered;
+    color: black;
+    font-family: 'Roboto-Bold';
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: border 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+}
+
+.formulario button:hover{
+    border: 2px solid white;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h1{
+    font-family: 'Roboto-Bold';
+    color: white;
+    font-size: 25px;
+}
+
+footer p{
+    font-family: 'Roboto-Regular';
+    color: white;
+}
+
+.f-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.f-contato{
+    width: 500px;
+    height: 230px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.f-contato a{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.f-redes{
+    display: flex;
+    width: 35%;
+    height: 40px;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f-redes img{
+    height: 90%;
+}
+
+.f-inicio{
+    height: 230px;
+    width: 200px;
+    /* border: 1px solid black; */
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.f-inicio a{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.f-newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    height: 230px;
+    /* border: 1px solid black; */
+}
+
+.f-newsletter h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.f-newsletter input{
+    width: 500px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.f-newsletter input:hover{
+    transform: scale(0.99);
+}
+
+.f-newsletter button{
+    width: 510px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-family: 'Roboto-Bold';
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input.borda {
+    border: 4px solid orangered;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 70px;
+    border-top: 2px solid gray;
+}
+
+.copyright p{
+    font-family: 'Roboto-Regular';
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+
 
