@@ -643,9 +643,7 @@ input.borda {
     margin-top: 20px;
 }
 
-/* ======================
-   Media Queries
-   ====================== */
+/* responsividade */
 
 
 @media (max-width: 1024px) {
@@ -682,21 +680,19 @@ input.borda {
     row-gap: 1rem;
     padding: 2rem 1rem;
   }
+  
   .material-info, .imagem-guia {
     width: 100%;
   }
 
- 
   .slider {
     height: 300px;
   }
 
-  
   .formulario input {
     width: 90%;
   }
 }
-
 
 @media (max-width: 768px) {
  
@@ -752,8 +748,6 @@ input.borda {
     background-repeat: no-repeat;
     background-color: black;
   }
-
-
 
   .cards {
     flex-direction: column;
@@ -811,7 +805,6 @@ input.borda {
   }
 }
 
-
 @media (max-width: 480px) {
   .s-conteudo p {
     font-size: 2.5rem;
@@ -822,7 +815,6 @@ input.borda {
 }
 
 @media (max-width: 1280px) and (max-height: 800px) {
-
   .formulario input {
     width: 80%;
   }
