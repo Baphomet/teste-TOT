@@ -1,4 +1,4 @@
-# Nome do Projeto
+# Projeto de site TOT
 
 Uma landing page responsiva inspirado no site da TOT, com seção, carrossel de parceiros, soluções, indicadores e formulário.
 
